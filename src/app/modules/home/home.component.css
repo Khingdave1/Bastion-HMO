@@ -1,0 +1,94 @@
+/* Hero starts */
+.hero {
+  background-color: #c9e94833;
+}
+.hero .ba-flex-img img {
+  animation: slideIn 2s cubic-bezier(0.5, 0, 0, 1);
+}
+@media only screen and (max-width: 670px) {
+  .hero .ba-flex-img {
+    display: none;
+  }
+}
+
+/* Hero ends */
+
+/* Plans starts */
+.ba-sect-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.ba-sect-header p {
+  margin-top: 0.5rem;
+}
+.ba-card {
+  display: grid;
+  grid-gap: 2rem;
+  text-align: center;
+}
+@media only screen and (min-width: 450px) {
+  .ba-card {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+}
+.ba-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.ba-item-details {
+  margin-bottom: 0.5rem;
+}
+.ba-item img {
+  /* width: 100%; */
+  /* height: 261px; */
+  margin-bottom: 1rem;
+}
+.ba-item p {
+  margin: 1.5rem 0 0.5rem 0;
+}
+/* Plans ends */
+
+/* Provider starts */
+form {
+  display: grid;
+  grid-gap: 1rem;
+}
+.form-field {
+  background-color: #f4f4f4;
+  border-radius: var(--border-radius);
+  transition: all 0.2s ease-in;
+  display: flex;
+}
+.form-field:hover {
+  box-shadow: var(--box-shadow);
+}
+form input::placeholder,
+form textarea::placeholder,
+form select {
+  color: var(--dark-green-color);
+}
+form select option:hover {
+  background-color: var(--dark-green-color);
+}
+/* Provider ends */
+
+/* Keyframes */
+@keyframes slideIn {
+  0% {
+    transform: rotate(45deg);
+    opacity: 0;
+  }
+  25% {
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+  50% {
+    transform: rotate(45deg);
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+}

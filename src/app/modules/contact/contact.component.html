@@ -1,0 +1,123 @@
+<!-- Section -->
+<section class="sect">
+  <div class="container ba-flex-content row-reverse">
+    <div class="ba-flex-img">
+      <img src="../../../assets/img/contact/Group1.png" alt="image" />
+    </div>
+    <div class="ba-flex-details">
+      <h2 class="">Contact Us</h2>
+      <p class="paragh">
+        Complete either of the forms below to get started and get a call-back
+        from us or a message reply from our team.
+      </p>
+      <!-- <button class="btn sec-btn dis-flex">Get Started Now</button> -->
+    </div>
+  </div>
+</section>
+
+<section class="form-container sect">
+  <div class="container">
+    <!-- Form Area -->
+    <div class="get-quote form-row">
+      <h3 class="form-row-header">Get a quote</h3>
+      <form class="get-quote-form">
+        <div class="form-field firstName">
+          <label for="firstName">First Name</label>
+          <input type="text" name="firstName" autocomplete="firstName" />
+        </div>
+        <div class="form-field lastName">
+          <label for="lastName">Last Name</label>
+          <input type="text" name="lastName" autocomplete="lastName" />
+        </div>
+        <div class="form-field email span-2">
+          <label for="email">Email Address</label>
+          <input type="email" name="email" autocomplete="email" />
+        </div>
+        <div class="form-field phoneNumber span-2">
+          <label for="phoneNumber">Phone Number</label>
+          <input type="text" name="phoneNumber" autocomplete="phoneNumber" />
+        </div>
+        <div class="form-field gender">
+          <label for="gender">Gender</label>
+          <select name="" id="" class="clickable">
+            <option value="">Male</option>
+            <option value="">Female</option>
+            <option value="">Others</option>
+          </select>
+        </div>
+        <div class="form-field planType">
+          <label for="planType">Plan Type</label>
+          <select name="" id="" class="clickable">
+            <option value="">1</option>
+            <option value="">2</option>
+            <option value="">3</option>
+          </select>
+        </div>
+        <div class="form-field location span-2">
+          <label for="location">Location</label>
+          <input type="text" name="location" autocomplete="location" />
+        </div>
+
+        <!-- Error -->
+        <!-- <span
+          class="submit-message"
+          id="submit-message"
+          [class.show]="showMessage"
+          >{{ submitMessage }}</span
+        > -->
+
+        <div class="form-submit span-2">
+          <button class="btn prim-btn">
+            Call me
+            <!-- <span *ngIf="loading">Sending...</span>
+            <span *ngIf="!loading">Submit</span> -->
+          </button>
+        </div>
+      </form>
+    </div>
+
+    <hr class="hr" />
+
+    <!-- Information -->
+    <div class="contact-us form-row">
+      <h3 class="form-row-header">Contact Us</h3>
+      <form class="contact-us-form">
+        <div class="form-field firstName">
+          <label for="firstName">First Name</label>
+          <input type="text" name="firstName" autocomplete="firstName" />
+        </div>
+        <div class="form-field lastName">
+          <label for="lastName">Last Name</label>
+          <input type="text" name="lastName" autocomplete="lastName" />
+        </div>
+        <div class="form-field email span-2">
+          <label for="email">Email Address</label>
+          <input type="email" name="email" autocomplete="email" />
+        </div>
+        <div class="form-field message span-2">
+          <label for="message">Message</label>
+          <textarea name="" cols="20" rows="5" name="message"></textarea>
+        </div>
+
+        <!-- Error -->
+        <!-- <span
+          class="submit-message"
+          id="submit-message"
+          [class.show]="showMessage"
+          >{{ submitMessage }}</span
+        > -->
+
+        <div class="form-submit span-2">
+          <button class="btn sec-btn">
+            Send Message
+            <!-- <span *ngIf="loading">Sending...</span>
+            <span *ngIf="!loading">Submit</span> -->
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- App download -->
+<app-app-download></app-app-download>

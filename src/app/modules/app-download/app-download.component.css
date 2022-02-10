@@ -1,0 +1,32 @@
+/* App download starts */
+.app-download {
+  background-color: var(--primary-color);
+}
+.app-download {
+  padding: 0 5%;
+}
+.app-download .ba-flex-content {
+  align-items: flex-end;
+}
+.app-download-details {
+  padding: 3rem 0;
+}
+.app-download-details h2,
+.app-download-details .paragh {
+  color: var(--white-color);
+}
+@media screen and (min-width: 1200px) {
+  .app-download {
+    max-width: 900px;
+    position: relative;
+    visibility: visible;
+    margin: 0 auto -8rem auto;
+    border-radius: 30px;
+  }
+}
+@media only screen and (max-width: 670px) {
+  .app-download .ba-flex-content {
+    justify-items: center;
+  }
+}
+/* App download ends */
