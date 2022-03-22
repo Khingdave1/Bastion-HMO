@@ -59,6 +59,13 @@
     justify-content: center;
   }
 }
+@media only screen and (max-width: 505px) {
+  .pricing-tabs {
+    width: 100%;
+    overflow-x: scroll;
+    justify-content: flex-start;
+  }
+}
 .pricing-tabs button {
   padding: 0.5rem 1rem;
   border-radius: 100px;
