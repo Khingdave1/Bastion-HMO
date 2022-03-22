@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AuthComponent } from './layouts/auth/auth.component';
 import { DefaultComponent } from './layouts/default/default.component';
 import { AboutComponent } from './modules/about/about.component';
 import { BlogComponent } from './modules/blog/blog.component';
@@ -9,6 +10,7 @@ import { CorporateComponent } from './modules/corporate/corporate.component';
 import { HomeComponent } from './modules/home/home.component';
 import { IndividualFamilyComponent } from './modules/individual-family/individual-family.component';
 import { ProviderComponent } from './modules/provider/provider.component';
+import { SigninComponent } from './modules/signin/signin.component';
 import { SmallBusinessComponent } from './modules/small-business/small-business.component';
 
 const routes: Routes = [
@@ -85,6 +87,20 @@ const routes: Routes = [
         component: CartSummaryComponent,
         data: {
           title: 'Cart summary',
+          description: 'Description Meta Tag Content'
+        }
+      }
+    ]
+  },
+  {
+    path: 'auth',
+    component: AuthComponent,
+    children: [
+      {
+        path: '',
+        component: SigninComponent,
+        data: {
+          title: 'Sign in',
           description: 'Description Meta Tag Content'
         }
       }
