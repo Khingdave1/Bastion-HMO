@@ -1,0 +1,65 @@
+<section class="cart sect">
+  <div class="container">
+    <div class="dis-flex pricing-header">
+      <div class="">
+        <h3 class="">Health Plans in Your Cart</h3>
+        <p class="">Without extra benefits</p>
+      </div>
+      <div class="pricing-tabs dis-flex">
+        <button class="monthly">Monthly</button>
+        <button class="quarterly">Quarterly</button>
+        <button class="half-yearly">Half Year</button>
+        <button class="yearly">Yearly</button>
+      </div>
+    </div>
+    <div class="cart-body">
+      <div class="cart-table">
+        <ul class="cart-table-head">
+          <li class="col-1">Health Plan</li>
+          <li>Unit price (NGN)</li>
+          <li>Quantity</li>
+          <li>Sub total (NGN)</li>
+        </ul>
+        <div class="cart-table-body">
+          <ul>
+            <li class="cart-item">
+              <span class="cart-name col-1">
+                <span>
+                  <p>Gold</p>
+                </span>
+              </span>
+              <p class="cart-price">{{ unitPrice | number }}</p>
+              <span class="select-quan dis-flex">
+                <img
+                  src="https://res.cloudinary.com/djnqxvljr/image/upload/v1623058378/perlfood/assets/svg/bx-minus_zciec2.svg"
+                  alt=""
+                  (click)="decrement()"
+                  class="decrease clickable"
+                />
+                <span>{{ counter }}</span>
+                <img
+                  src="https://res.cloudinary.com/djnqxvljr/image/upload/v1623069671/perlfood/assets/svg/bx-plus_bfcjue.svg"
+                  alt=""
+                  (click)="increment()"
+                  class="increase clickable"
+                />
+              </span>
+              <p class="cart-sub-total">{{ subTotal | number }}</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <aside class="cart-aside">
+        <h3>Cart Summary</h3>
+        <p>Plan(s) Total</p>
+        <div class="cart-aside-footer dis-flex">
+          <span>
+            <p>Total Price</p>
+            <h4>NGN {{ subTotal | number }}</h4>
+          </span>
+          <button class="btn prim-btn">Checkout</button>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>

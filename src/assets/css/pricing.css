@@ -1,0 +1,110 @@
+.pricing-header {
+  display: grid;
+  grid-gap: 1rem;
+}
+@media only screen and (min-width: 719px) {
+  .pricing-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.pricing-body {
+  display: grid;
+  grid-gap: 2rem;
+  margin-top: 2rem;
+}
+@media only screen and (min-width: 450px) {
+  .pricing-body {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+}
+.pricing-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 3rem;
+  background-color: rgba(229, 234, 244, 0.2);
+  border-radius: calc(var(--border-radius) + 5px);
+}
+.pricing-details {
+  margin-bottom: 0.5rem;
+  text-align: left;
+}
+.pricing-item .price {
+  font-weight: 700;
+  margin: 0.5rem 0 1rem 0;
+}
+.pricing-item ul {
+  margin-top: 1rem;
+}
+.pricing-item ul li {
+  display: flex;
+  color: #6050b5;
+}
+.pricing-item ul li:not(:last-child) {
+  margin-bottom: 1rem;
+}
+.pricing-item ul li img {
+  margin-right: 1rem;
+}
+.pricing-item .btn {
+  margin-top: 1rem;
+}
+
+/* Tabs buttons starts */
+@media only screen and (max-width: 719px) {
+  .pricing-tabs {
+    justify-content: center;
+  }
+}
+.pricing-tabs button {
+  padding: 0.5rem 1rem;
+  border-radius: 100px;
+  background: none;
+  outline: none;
+  transition: all 0.4s;
+}
+.pricing-tabs button:not(:last-child) {
+  margin-right: 1rem;
+}
+.pricing-tabs button.active {
+}
+.pricing-tabs button:hover {
+  color: var(--white-color);
+  background-color: #1e1147;
+}
+.pricing-tabs .monthly {
+  color: #1e1147;
+  background-color: rgba(30, 17, 71, 0.1);
+}
+.pricing-tabs .monthly.active {
+  color: var(--white-color);
+  background-color: #1e1147;
+}
+.pricing-tabs .quarterly {
+  color: #ff9100;
+  background-color: rgba(255, 145, 0, 0.1);
+}
+.pricing-tabs .quarterly.active {
+  color: var(--white-color);
+  background-color: #ff9100;
+}
+.pricing-tabs .half-yearly {
+  color: #0c6525;
+  background-color: rgba(12, 101, 37, 0.1);
+}
+.pricing-tabs .half-yearly.active {
+  color: var(--white-color);
+  background-color: #0c6525;
+}
+.pricing-tabs .yearly {
+  color: #ff3100;
+  background-color: rgba(255, 49, 0, 0.1);
+}
+.pricing-tabs .yearly.active {
+  color: var(--white-color);
+  background-color: #ff3100;
+}
+/* Tabs buttons ends */

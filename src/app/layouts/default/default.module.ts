@@ -10,6 +10,8 @@ import { SmallBusinessComponent } from 'src/app/modules/small-business/small-bus
 import { AboutComponent } from 'src/app/modules/about/about.component';
 import { ContactComponent } from 'src/app/modules/contact/contact.component';
 import { AppDownloadComponent } from 'src/app/modules/app-download/app-download.component';
+import { ProviderComponent } from 'src/app/modules/provider/provider.component';
+import { CartSummaryComponent } from 'src/app/modules/cart-summary/cart-summary.component';
 
 
 @NgModule({
@@ -21,7 +23,9 @@ import { AppDownloadComponent } from 'src/app/modules/app-download/app-download.
     SmallBusinessComponent,
     AboutComponent,
     ContactComponent,
-    AppDownloadComponent
+    AppDownloadComponent,
+    ProviderComponent,
+    CartSummaryComponent
   ],
   imports: [
     CommonModule,

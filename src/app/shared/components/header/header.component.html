@@ -24,9 +24,25 @@
         </li>
       </ul>
 
-      <div class="mobile-view dis-flex">
-        <div class="get-started">
+      <div class="right-area dis-flex">
+        <div class="get-started" *ngIf="signedIn == false">
           <button class="btn prim-btn">Get Started</button>
+        </div>
+        <div class="profile dis-flex" *ngIf="signedIn == true">
+          <img
+            src="../../../../assets/img/profile-pic.png"
+            alt=""
+            class="profile-pic"
+          />
+          <span>
+            <h5 class="profile-name">Dominic Praise</h5>
+            <small>Individual Plan</small>
+          </span>
+          <img
+            src="../../../../assets/img/svg/caret-down.svg"
+            alt=""
+            class="icon"
+          />
         </div>
 
         <!-- Hamburger menu -->

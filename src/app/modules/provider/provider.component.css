@@ -1,0 +1,49 @@
+/* Provider starts */
+form {
+  display: grid;
+  grid-gap: 1rem;
+}
+.form-field {
+  background-color: #f4f4f4;
+  border-radius: var(--border-radius);
+  transition: all 0.2s ease-in;
+  display: flex;
+}
+.form-field:hover {
+  box-shadow: var(--box-shadow);
+}
+form input::placeholder,
+form textarea::placeholder,
+form select {
+  color: var(--dark-green-color);
+}
+form select option:hover {
+  background-color: var(--dark-green-color);
+}
+/* Provider ends */
+@media only screen and (max-width: 770px) {
+  .provider .ba-flex-content {
+    display: grid;
+    grid-gap: 2rem;
+    justify-content: normal;
+  }
+}
+.provider-res,
+.provider-form {
+  flex-basis: 40%;
+}
+.provider-res .total-res {
+  margin-bottom: 0.5rem;
+}
+.provider .res-list {
+  display: grid;
+  grid-gap: 1rem;
+}
+.provider .res-item {
+  background-color: #f4f4f4;
+  border-radius: var(--border-radius);
+  padding: 2rem;
+}
+.provider .res p {
+  margin-top: 1rem;
+}

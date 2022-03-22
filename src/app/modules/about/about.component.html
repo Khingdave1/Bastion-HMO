@@ -1,1 +1,141 @@
-<p>about works!</p>
+<section class="sect">
+  <div class="container ba-flex-content row-reverse">
+    <div class="ba-flex-img">
+      <img src="../../../assets/img/about/Group1.png" alt="image" />
+    </div>
+    <div class="ba-flex-details">
+      <h2 class="">About Bastion Health</h2>
+      <p class="paragh">
+        Our commitment is ensuring financial risk protection to all Africans,
+        especially the undeserved population. Our core values of Wholeness,
+        Empathy, Courage, Agility, Responsibility and Excellence drives us to
+        seek ways to improve lives.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="sect">
+  <div class="container ba-flex-content">
+    <div class="ba-flex-img">
+      <img src="../../../assets/img/about/Group1.png" alt="image" />
+    </div>
+    <div class="ba-flex-details">
+      <h2 class="">Welcome!</h2>
+      <p class="paragh">
+        <span
+          >A wise man once said that health is wealth. The productivity of a
+          nation is driven by the health and wellbeing of its citizens. At
+          Bastion, we are passionate about ensuring quality healthcare is
+          accessible and affordable. We leverage cutting edge technologies to
+          drive our operations and services, to offer flexible and innovative
+          products.</span
+        >
+        <span
+          >Our commitment is ensuring financial risk protection to all Africans,
+          especially the undeserved population. Our core values of Wholeness,
+          Empathy, Courage, Agility, Responsibility and Excellence drives us to
+          seek ways to improve lives. Our team exudes these values.</span
+        >
+        <strong>At Bastion, WECARE!!!</strong>
+      </p>
+      <div class="dis-flex ba-md">
+        <img src="../../../assets/img/about/md.png" alt="" />
+        <span>
+          <h4>Naomi Aduku</h4>
+          <p>MD, Bastion Health Ltd</p>
+        </span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Our Mission and Vision -->
+<section class="sect">
+  <div class="container">
+    <div class="ba-card">
+      <div class="ba-item">
+        <div class="ba-item-details">
+          <picture class="">
+            <img src="../../../assets/img/about/mission.svg" alt="image" />
+          </picture>
+          <h3 class="">Mission</h3>
+          <p>Transforming healthcare in Africa</p>
+        </div>
+      </div>
+      <div class="ba-item">
+        <div class="ba-item-details">
+          <picture class="">
+            <img src="../../../assets/img/about/vision.svg" alt="image" />
+          </picture>
+          <h3 class="">Vision</h3>
+          <p>Making Good Healthcare accessible and affordable</p>
+        </div>
+      </div>
+      <div class="ba-item">
+        <div class="ba-item-details">
+          <picture class="">
+            <img src="../../../assets/img/about/values.svg" />
+          </picture>
+          <h3 class="">Values</h3>
+          <p>In all that we do, 'WECARE' for our stakeholders</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Our Promises -->
+<section class="sect promises">
+  <div class="container">
+    <div class="ba-sect-header">
+      <h2 class="">Our Promise</h2>
+      <p>
+        As part of our high quality service, we'd like to offer something extra
+        too.
+      </p>
+    </div>
+    <div class="ba-card">
+      <div class="ba-item" *ngFor="let item of ourPromises">
+        <div class="ba-item-details">
+          <picture class="">
+            <img [src]="item.image" alt="image" />
+          </picture>
+          <div class="">
+            <h3 class="">{{ item.name }}</h3>
+            <p>
+              {{ item.description }}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Our Team -->
+<section class="sect team">
+  <div class="container">
+    <div class="ba-sect-header">
+      <h2 class="">Meet our Team</h2>
+      <p>
+        These are the people responsible for all the health developments
+        happening backstage.
+      </p>
+    </div>
+    <div class="ba-card">
+      <div class="ba-item" *ngFor="let item of boardMembers">
+        <div class="ba-item-details">
+          <a [href]="item.image" class="clickable profile-pic"
+            ><img [src]="item.image" alt="image"
+          /></a>
+          <h3 class="">{{ item.name }}</h3>
+          <p>{{ item.role }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- App Download -->
+<app-app-download></app-app-download>

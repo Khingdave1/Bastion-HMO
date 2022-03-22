@@ -37,6 +37,20 @@ li {
 .nav-item:hover {
   color: var(--green-color);
 }
+.right-area .profile span {
+  margin: 0 1rem;
+}
+.right-area .profile .profile-pic {
+  width: 40px;
+  height: 40px;
+}
+.right-area .profile .profile-name {
+  font-weight: 600;
+}
+.right-area .profile .icon {
+  width: 14px;
+  height: 14px;
+}
 .get-started .btn {
   padding: 0.5rem 1.5rem;
 }

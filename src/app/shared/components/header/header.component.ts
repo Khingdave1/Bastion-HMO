@@ -12,7 +12,12 @@ export class HeaderComponent implements OnInit {
   navLink: any = [
     {
       name: "Health Plans",
-      link: "/plan",
+      link: "/individual",
+      subLinks: []
+    },
+    {
+      name: "Providers",
+      link: "/provider",
       subLinks: []
     },
     {
@@ -31,6 +36,8 @@ export class HeaderComponent implements OnInit {
       subLinks: []
     }
   ]
+
+  signedIn: boolean = false;
 
   constructor() { }
 

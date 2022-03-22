@@ -59,6 +59,9 @@ footer .container {
   display: grid;
   grid-gap: 1rem;
 }
+.contact-details .contact-email {
+  /* color: var(--primary-color); */
+}
 
 footer .copyright {
   margin-top: 7rem;

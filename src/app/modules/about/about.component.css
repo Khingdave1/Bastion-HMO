@@ -1,0 +1,41 @@
+.ba-flex-details .paragh {
+  display: grid;
+  grid-gap: 0.5rem;
+}
+.ba-flex-details .ba-md img {
+  margin-right: 1rem;
+}
+
+/* Team starts */
+@media only screen and (min-width: 450px) {
+  .team .ba-card {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+}
+.team .ba-item-details .profile-pic {
+  display: block;
+  width: 100%;
+  margin-bottom: 0.5rem;
+}
+.team .ba-item-details img {
+  border: 4px solid var(--primary-color);
+  border-radius: 10px;
+  margin-bottom: 0;
+}
+.team .ba-item p {
+  margin: 0.2rem 0 0.5rem 0;
+}
+/* Team ends */
+
+/* Promises starts */
+.promises .ba-card {
+  text-align: left;
+}
+.promises .ba-item-details {
+  display: flex;
+  align-items: flex-start;
+}
+.promises .ba-item-details picture {
+  margin-right: 1rem;
+}
+/* Promises ends */

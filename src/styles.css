@@ -139,7 +139,7 @@ textarea {
   display: flex;
   align-items: center;
 }
-/* Headings starts */
+/* Headings and texts  starts */
 h1 {
   font-size: 34px;
 }
@@ -156,13 +156,20 @@ h4 {
   font-weight: 500;
 }
 h5 {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 500;
 }
-p {
+h6 {
+  font-size: 14px;
+  font-weight: 500;
+}
+p,
+li {
+  font-size: 18px;
+  line-height: 30px;
   font-weight: 300;
 }
-/* Headings ends */
+/* Headings and texts ends */
 
 /* Header Hero starts */
 /* .hero-area {
@@ -186,8 +193,8 @@ p {
 .ba-flex-details {
   flex-basis: 50%;
 }
-.ba-flex-details h3 {
-  margin-bottom: 1.5rem;
+.ba-flex-details h2 {
+  /* margin-bottom: 1.5rem; */
 }
 .paragh {
   margin: 1.5rem 0 2rem 0;
@@ -204,9 +211,46 @@ p {
   .ba-flex-content {
     display: grid;
     grid-gap: 2rem;
+    justify-content: normal;
   }
 }
 /* ba flex ends */
+
+/* ba card starts */
+.ba-sect-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.ba-sect-header p {
+  margin-top: 0.5rem;
+}
+.ba-card {
+  display: grid;
+  grid-gap: 2rem;
+  text-align: center;
+}
+@media only screen and (min-width: 450px) {
+  .ba-card {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+}
+.ba-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.ba-item-details {
+  margin-bottom: 0.5rem;
+}
+.ba-item img {
+  /* width: 100%; */
+  /* height: 261px; */
+  margin-bottom: 1rem;
+}
+.ba-item p {
+  margin: 1.5rem 0 0.5rem 0;
+}
+/* ba card ends */
 
 /* App Download Button starts */
 .app-btns {
