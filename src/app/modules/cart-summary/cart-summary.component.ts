@@ -7,16 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CartSummaryComponent implements OnInit {
 
-  counter: number = 1;
+  counter: number = 1
   unitPrice: any = 5400
-  subTotal: any = 5400;
+  unitPrice2: any = 7500
+  unitPrice3: any = 10200
+  subTotal: any = 5400
+  id: any = "mission"
 
   constructor() { }
 
   ngOnInit(): void {
-
-
-    console.log(this.subTotal.toLocaleString())
   }
 
   decrement() {
@@ -33,6 +33,12 @@ export class CartSummaryComponent implements OnInit {
     if (this.counter <= 1) {
       this.counter = 1
     }
+  }
+
+  tabChange(ids: any) {
+    this.id = ids
+
+    console.log(this.id)
   }
 
 

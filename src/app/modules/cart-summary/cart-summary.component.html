@@ -6,10 +6,26 @@
         <p class="">Without extra benefits</p>
       </div>
       <div class="pricing-tabs dis-flex">
-        <button class="monthly">Monthly</button>
-        <button class="quarterly">Quarterly</button>
-        <button class="half-yearly">Half Yearly</button>
-        <button class="yearly">Yearly</button>
+        <button class="monthly" id="monthly" (click)="tabChange('monthly')">
+          Monthly
+        </button>
+        <button
+          class="quarterly"
+          id="quarterly"
+          (click)="tabChange('quarterly')"
+        >
+          Quarterly
+        </button>
+        <button
+          class="half-yearly"
+          id="half-yearly"
+          (click)="tabChange('half-yearly')"
+        >
+          Half Yearly
+        </button>
+        <button class="yearly" id="yearly" (click)="tabChange('yearly')">
+          Yearly
+        </button>
       </div>
     </div>
     <div class="cart-body">
@@ -48,6 +64,7 @@
             </li>
           </ul>
         </div>
+        <div class="cart-table-body" *ngIf="id == 'quarterly'">Hello 2</div>
       </div>
       <aside class="cart-aside">
         <h3>Cart Summary</h3>

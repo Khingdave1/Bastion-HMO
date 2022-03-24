@@ -3,22 +3,24 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { AuthModule } from './layouts/auth/auth.module';
 import { DefaultModule } from './layouts/default/default.module';
-import { AuthComponent } from './layouts/auth/auth.component';
-import { SigninComponent } from './modules/signin/signin.component';
-import { SignupComponent } from './modules/signup/signup.component';
+import { PageNotFoundComponent } from './modules/page-not-found/page-not-found.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
     AppComponent,
-    AuthComponent,
-    SigninComponent,
-    SignupComponent
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    DefaultModule
+    DefaultModule,
+    AuthModule,
+    RouterModule.forRoot([
+      { path: '**', component: PageNotFoundComponent }
+    ])
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,26 @@
+.pnf-container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+}
+.pnf {
+  margin: auto;
+  display: grid;
+  place-items: center;
+}
+.pnf .oops-image {
+  max-width: 200px;
+  height: auto;
+  margin-bottom: 0.5rem;
+}
+.pnf p {
+  color: var(--primary-color);
+  margin-top: 0.5rem;
+}
+.pnf p img {
+  margin-right: 0.5rem;
+  transition: all 0.2s;
+}
+.pnf p:hover img {
+  transform: translateX(-5px);
+}

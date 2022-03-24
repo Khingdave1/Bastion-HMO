@@ -11,6 +11,7 @@ import { HomeComponent } from './modules/home/home.component';
 import { IndividualFamilyComponent } from './modules/individual-family/individual-family.component';
 import { ProviderComponent } from './modules/provider/provider.component';
 import { SigninComponent } from './modules/signin/signin.component';
+import { SignupComponent } from './modules/signup/signup.component';
 import { SmallBusinessComponent } from './modules/small-business/small-business.component';
 
 const routes: Routes = [
@@ -93,14 +94,22 @@ const routes: Routes = [
     ]
   },
   {
-    path: 'auth',
+    path: '',
     component: AuthComponent,
     children: [
       {
-        path: '',
+        path: 'signin',
         component: SigninComponent,
         data: {
           title: 'Sign in',
+          description: 'Description Meta Tag Content'
+        }
+      },
+      {
+        path: 'signup',
+        component: SignupComponent,
+        data: {
+          title: 'Sign up',
           description: 'Description Meta Tag Content'
         }
       }

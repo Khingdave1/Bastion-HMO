@@ -76,8 +76,7 @@
 .pricing-tabs button:not(:last-child) {
   margin-right: 1rem;
 }
-.pricing-tabs button.active {
-}
+.pricing-tabs button.active,
 .pricing-tabs button:hover {
   color: var(--white-color);
   background-color: #1e1147;
@@ -86,32 +85,32 @@
   color: #1e1147;
   background-color: rgba(30, 17, 71, 0.1);
 }
-.pricing-tabs .monthly.active {
+/* .pricing-tabs .monthly.active {
   color: var(--white-color);
   background-color: #1e1147;
-}
+} */
 .pricing-tabs .quarterly {
   color: #ff9100;
   background-color: rgba(255, 145, 0, 0.1);
 }
-.pricing-tabs .quarterly.active {
+/* .pricing-tabs .quarterly.active {
   color: var(--white-color);
   background-color: #ff9100;
-}
+} */
 .pricing-tabs .half-yearly {
   color: #0c6525;
   background-color: rgba(12, 101, 37, 0.1);
 }
-.pricing-tabs .half-yearly.active {
+/* .pricing-tabs .half-yearly.active {
   color: var(--white-color);
   background-color: #0c6525;
-}
+} */
 .pricing-tabs .yearly {
   color: #ff3100;
   background-color: rgba(255, 49, 0, 0.1);
 }
-.pricing-tabs .yearly.active {
+/* .pricing-tabs .yearly.active {
   color: var(--white-color);
   background-color: #ff3100;
-}
+} */
 /* Tabs buttons ends */

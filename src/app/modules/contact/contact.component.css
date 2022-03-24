@@ -1,3 +1,22 @@
+form input,
+form textarea,
+form select {
+  width: 100%;
+  padding: 1rem;
+  border: none;
+  outline: none;
+  background-color: #f4f4f4;
+  border-radius: var(--border-radius);
+  font-size: 16px;
+  transition: all 0.2s;
+}
+form select {
+  color: var(--dark-green-color);
+}
+textarea {
+  resize: none;
+}
+
 .form-container .container {
   display: flex;
   justify-content: space-between;

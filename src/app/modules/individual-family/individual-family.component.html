@@ -121,13 +121,38 @@
         <p class="">Plan key features</p>
       </div>
       <div class="pricing-tabs dis-flex">
-        <button class="monthly">Monthly</button>
-        <button class="quarterly">Quarterly</button>
-        <button class="half-yearly">Half Yearly</button>
-        <button class="yearly">Yearly</button>
+        <button
+          class="monthly"
+          [class.active]="id == 'monthly'"
+          (click)="tabChange('monthly')"
+        >
+          Monthly
+        </button>
+        <button
+          class="quarterly"
+          [class.active]="id == 'quarterly'"
+          (click)="tabChange('quarterly')"
+        >
+          Quarterly
+        </button>
+        <button
+          class="half-yearly"
+          [class.active]="id == 'half-yearly'"
+          (click)="tabChange('half-yearly')"
+        >
+          Half Yearly
+        </button>
+        <button
+          class="yearly"
+          [class.active]="id == 'yearly'"
+          (click)="tabChange('yearly')"
+        >
+          Yearly
+        </button>
       </div>
     </div>
-    <div class="pricing-body">
+    <!-- Monthly -->
+    <div class="pricing-body" *ngIf="id == 'monthly'">
       <div class="pricing-item">
         <div class="pricing-details">
           <h5>Benefit</h5>
@@ -193,6 +218,327 @@
       <div class="pricing-item">
         <div class="pricing-details">
           <h5>Benefit</h5>
+          <h4 class="price">NGN 350,000</h4>
+          <p class="">
+            This involves treatment of basic medical and surgical (minor)
+            outpatient cases.
+          </p>
+          <ul>
+            <li>
+              <img src="../../../assets/img/svg/Check.svg" alt="" />
+              <p>Consultation Coverage</p>
+            </li>
+            <li>
+              <img src="../../../assets/img/svg/Check.svg" alt="" />
+              <p>Screening and Diagnostics</p>
+            </li>
+            <li>
+              <img src="../../../assets/img/svg/Check.svg" alt="" />
+              <p>Maternal & Infant Care</p>
+            </li>
+            <li>
+              <img src="../../../assets/img/svg/Check.svg" alt="" />
+              <p>Dental, Eye, ENT, etc</p>
+            </li>
+            <li>
+              <img src="../../../assets/img/svg/Check.svg" alt="" />
+              <p>Chronic Treatments</p>
+            </li>
+            <li>
+              <img src="../../../assets/img/svg/Check.svg" alt="" />
+              <p>Preventive care</p>
+            </li>
+            <li>
+              <img src="../../../assets/img/svg/Check.svg" alt="" />
+              <p>Premium</p>
+            </li>
+          </ul>
+        </div>
+        <button class="btn tert-btn clickable">Choose Plan</button>
+      </div>
+      <div class="ba-card"></div>
+    </div>
+    <!-- Quarterly -->
+    <div class="pricing-body" *ngIf="id == 'quarterly'">
+      <div class="pricing-item">
+        <div class="pricing-details">
+          <h5>Quarterly benefit</h5>
+          <h4 class="price">NGN 150,000</h4>
+          <p class="">
+            This involves treatment of basic medical and surgical (minor)
+            outpatient cases.
+          </p>
+          <ul>
+            <li>
+              <img src="../../../assets/img/svg/Check.svg" alt="" />
+              <p>Consultation Coverage</p>
+            </li>
+            <li>
+              <img src="../../../assets/img/svg/Check.svg" alt="" />
+              <p>Screening and Diagnostics</p>
+            </li>
+            <li>
+              <img src="../../../assets/img/svg/Check.svg" alt="" />
+              <p>Maternal & Infant Care</p>
+            </li>
+            <li>
+              <img src="../../../assets/img/svg/Check.svg" alt="" />
+              <p>Dental, Eye, ENT, etc</p>
+            </li>
+          </ul>
+        </div>
+        <button class="btn tert-btn clickable">Choose Plan</button>
+      </div>
+      <div class="pricing-item">
+        <div class="pricing-details">
+          <h5>Quarterly Benefit</h5>
+          <h4 class="price">NGN 250,000</h4>
+          <p class="">
+            This involves treatment of basic medical and surgical (minor)
+            outpatient cases.
+          </p>
+          <ul>
+            <li>
+              <img src="../../../assets/img/svg/Check.svg" alt="" />
+              <p>Consultation Coverage</p>
+            </li>
+            <li>
+              <img src="../../../assets/img/svg/Check.svg" alt="" />
+              <p>Screening and Diagnostics</p>
+            </li>
+            <li>
+              <img src="../../../assets/img/svg/Check.svg" alt="" />
+              <p>Maternal & Infant Care</p>
+            </li>
+            <li>
+              <img src="../../../assets/img/svg/Check.svg" alt="" />
+              <p>Dental, Eye, ENT, etc</p>
+            </li>
+            <li>
+              <img src="../../../assets/img/svg/Check.svg" alt="" />
+              <p>Premium</p>
+            </li>
+          </ul>
+        </div>
+        <button class="btn tert-btn clickable">Choose Plan</button>
+      </div>
+      <div class="pricing-item">
+        <div class="pricing-details">
+          <h5>Quarterly Benefit</h5>
+          <h4 class="price">NGN 350,000</h4>
+          <p class="">
+            This involves treatment of basic medical and surgical (minor)
+            outpatient cases.
+          </p>
+          <ul>
+            <li>
+              <img src="../../../assets/img/svg/Check.svg" alt="" />
+              <p>Consultation Coverage</p>
+            </li>
+            <li>
+              <img src="../../../assets/img/svg/Check.svg" alt="" />
+              <p>Screening and Diagnostics</p>
+            </li>
+            <li>
+              <img src="../../../assets/img/svg/Check.svg" alt="" />
+              <p>Maternal & Infant Care</p>
+            </li>
+            <li>
+              <img src="../../../assets/img/svg/Check.svg" alt="" />
+              <p>Dental, Eye, ENT, etc</p>
+            </li>
+            <li>
+              <img src="../../../assets/img/svg/Check.svg" alt="" />
+              <p>Chronic Treatments</p>
+            </li>
+            <li>
+              <img src="../../../assets/img/svg/Check.svg" alt="" />
+              <p>Preventive care</p>
+            </li>
+            <li>
+              <img src="../../../assets/img/svg/Check.svg" alt="" />
+              <p>Premium</p>
+            </li>
+          </ul>
+        </div>
+        <button class="btn tert-btn clickable">Choose Plan</button>
+      </div>
+      <div class="ba-card"></div>
+    </div>
+    <!-- Half yearly -->
+    <div class="pricing-body" *ngIf="id == 'half-yearly'">
+      <div class="pricing-item">
+        <div class="pricing-details">
+          <h5>Half yearly benefit</h5>
+          <h4 class="price">NGN 150,000</h4>
+          <p class="">
+            This involves treatment of basic medical and surgical (minor)
+            outpatient cases.
+          </p>
+          <ul>
+            <li>
+              <img src="../../../assets/img/svg/Check.svg" alt="" />
+              <p>Consultation Coverage</p>
+            </li>
+            <li>
+              <img src="../../../assets/img/svg/Check.svg" alt="" />
+              <p>Screening and Diagnostics</p>
+            </li>
+            <li>
+              <img src="../../../assets/img/svg/Check.svg" alt="" />
+              <p>Maternal & Infant Care</p>
+            </li>
+            <li>
+              <img src="../../../assets/img/svg/Check.svg" alt="" />
+              <p>Dental, Eye, ENT, etc</p>
+            </li>
+          </ul>
+        </div>
+        <button class="btn tert-btn clickable">Choose Plan</button>
+      </div>
+      <div class="pricing-item">
+        <div class="pricing-details">
+          <h5>Half yearly benefit</h5>
+          <h4 class="price">NGN 250,000</h4>
+          <p class="">
+            This involves treatment of basic medical and surgical (minor)
+            outpatient cases.
+          </p>
+          <ul>
+            <li>
+              <img src="../../../assets/img/svg/Check.svg" alt="" />
+              <p>Consultation Coverage</p>
+            </li>
+            <li>
+              <img src="../../../assets/img/svg/Check.svg" alt="" />
+              <p>Screening and Diagnostics</p>
+            </li>
+            <li>
+              <img src="../../../assets/img/svg/Check.svg" alt="" />
+              <p>Maternal & Infant Care</p>
+            </li>
+            <li>
+              <img src="../../../assets/img/svg/Check.svg" alt="" />
+              <p>Dental, Eye, ENT, etc</p>
+            </li>
+            <li>
+              <img src="../../../assets/img/svg/Check.svg" alt="" />
+              <p>Premium</p>
+            </li>
+          </ul>
+        </div>
+        <button class="btn tert-btn clickable">Choose Plan</button>
+      </div>
+      <div class="pricing-item">
+        <div class="pricing-details">
+          <h5>Half yearly benefit</h5>
+          <h4 class="price">NGN 350,000</h4>
+          <p class="">
+            This involves treatment of basic medical and surgical (minor)
+            outpatient cases.
+          </p>
+          <ul>
+            <li>
+              <img src="../../../assets/img/svg/Check.svg" alt="" />
+              <p>Consultation Coverage</p>
+            </li>
+            <li>
+              <img src="../../../assets/img/svg/Check.svg" alt="" />
+              <p>Screening and Diagnostics</p>
+            </li>
+            <li>
+              <img src="../../../assets/img/svg/Check.svg" alt="" />
+              <p>Maternal & Infant Care</p>
+            </li>
+            <li>
+              <img src="../../../assets/img/svg/Check.svg" alt="" />
+              <p>Dental, Eye, ENT, etc</p>
+            </li>
+            <li>
+              <img src="../../../assets/img/svg/Check.svg" alt="" />
+              <p>Chronic Treatments</p>
+            </li>
+            <li>
+              <img src="../../../assets/img/svg/Check.svg" alt="" />
+              <p>Preventive care</p>
+            </li>
+            <li>
+              <img src="../../../assets/img/svg/Check.svg" alt="" />
+              <p>Premium</p>
+            </li>
+          </ul>
+        </div>
+        <button class="btn tert-btn clickable">Choose Plan</button>
+      </div>
+      <div class="ba-card"></div>
+    </div>
+    <!-- Yearly -->
+    <div class="pricing-body" *ngIf="id == 'yearly'">
+      <div class="pricing-item">
+        <div class="pricing-details">
+          <h5>Yearly benefit</h5>
+          <h4 class="price">NGN 150,000</h4>
+          <p class="">
+            This involves treatment of basic medical and surgical (minor)
+            outpatient cases.
+          </p>
+          <ul>
+            <li>
+              <img src="../../../assets/img/svg/Check.svg" alt="" />
+              <p>Consultation Coverage</p>
+            </li>
+            <li>
+              <img src="../../../assets/img/svg/Check.svg" alt="" />
+              <p>Screening and Diagnostics</p>
+            </li>
+            <li>
+              <img src="../../../assets/img/svg/Check.svg" alt="" />
+              <p>Maternal & Infant Care</p>
+            </li>
+            <li>
+              <img src="../../../assets/img/svg/Check.svg" alt="" />
+              <p>Dental, Eye, ENT, etc</p>
+            </li>
+          </ul>
+        </div>
+        <button class="btn tert-btn clickable">Choose Plan</button>
+      </div>
+      <div class="pricing-item">
+        <div class="pricing-details">
+          <h5>Yearly benefit</h5>
+          <h4 class="price">NGN 250,000</h4>
+          <p class="">
+            This involves treatment of basic medical and surgical (minor)
+            outpatient cases.
+          </p>
+          <ul>
+            <li>
+              <img src="../../../assets/img/svg/Check.svg" alt="" />
+              <p>Consultation Coverage</p>
+            </li>
+            <li>
+              <img src="../../../assets/img/svg/Check.svg" alt="" />
+              <p>Screening and Diagnostics</p>
+            </li>
+            <li>
+              <img src="../../../assets/img/svg/Check.svg" alt="" />
+              <p>Maternal & Infant Care</p>
+            </li>
+            <li>
+              <img src="../../../assets/img/svg/Check.svg" alt="" />
+              <p>Dental, Eye, ENT, etc</p>
+            </li>
+            <li>
+              <img src="../../../assets/img/svg/Check.svg" alt="" />
+              <p>Premium</p>
+            </li>
+          </ul>
+        </div>
+        <button class="btn tert-btn clickable">Choose Plan</button>
+      </div>
+      <div class="pricing-item">
+        <div class="pricing-details">
+          <h5>Yearly benefit</h5>
           <h4 class="price">NGN 350,000</h4>
           <p class="">
             This involves treatment of basic medical and surgical (minor)

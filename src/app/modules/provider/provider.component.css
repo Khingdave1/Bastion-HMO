@@ -12,14 +12,30 @@ form {
 .form-field:hover {
   box-shadow: var(--box-shadow);
 }
+form input,
+form textarea,
+form select {
+  width: 100%;
+  padding: 1rem;
+  border: none;
+  outline: none;
+  background-color: #f4f4f4;
+  border-radius: var(--border-radius);
+  font-size: 16px;
+  transition: all 0.2s;
+}
 form input::placeholder,
 form textarea::placeholder,
+form select {
+  color: var(--dark-green-color);
+}
 form select {
   color: var(--dark-green-color);
 }
 form select option:hover {
   background-color: var(--dark-green-color);
 }
+
 /* Provider ends */
 @media only screen and (max-width: 770px) {
   .provider .ba-flex-content {

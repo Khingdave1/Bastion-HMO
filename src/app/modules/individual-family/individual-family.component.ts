@@ -7,9 +7,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class IndividualFamilyComponent implements OnInit {
 
+  id: any = "monthly"
+
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  tabChange(ids: any) {
+    this.id = ids
+
+    console.log(this.id)
   }
 
 }

@@ -5,7 +5,8 @@
   --dark-green-color: #001710;
   --yellow-color: #ff9100;
   --white-color: #ffffff;
-  /* --grey-color: #fcfcfc; */
+  --grey-color1: rgba(0, 7, 37, 0.05);
+  --grey-color2: rgba(0, 0, 0, 0.5);
   --box-shadow: 0 0 12px 0 rgb(0 0 0 / 12%);
   --border-radius: 5px;
 }
@@ -49,24 +50,7 @@ input::placeholder,
 textarea::placeholder {
   font-family: "Poppins", sans-serif;
 }
-form input,
-form textarea,
-form select {
-  width: 100%;
-  padding: 1rem;
-  border: none;
-  outline: none;
-  background-color: #f4f4f4;
-  border-radius: var(--border-radius);
-  font-size: 16px;
-  transition: all 0.2s;
-}
-form select {
-  color: var(--dark-green-color);
-}
-textarea {
-  resize: none;
-}
+
 /* Buttons Starts */
 .btn {
   position: relative;

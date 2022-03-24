@@ -1,1 +1,53 @@
-<p>signin works!</p>
+<div class="auth">
+  <div class="auth-content">
+    <div class="auth-content-head">
+      <p class="uc">Login to continue</p>
+      <h2>
+        Welcome back boss <img src="../../../assets/img/svg/hi.svg" alt="" />
+      </h2>
+    </div>
+    <form class="auth-content-form">
+      <div class="form-control">
+        <input type="email" placeholder="Email" />
+      </div>
+      <div class="form-control">
+        <input placeholder="Password" [type]="hide ? 'password' : 'text'" />
+        <img
+          [src]="
+            hide
+              ? '../../../assets/img/svg/bx-show.svg'
+              : '../../../assets/img/svg/bx-hide.svg'
+          "
+          class="clickable"
+          (click)="hide = !hide"
+        />
+      </div>
+      <img src="" alt="" />
+      <div class="form-btn">
+        <button class="btn prim-btn clickable">
+          <!-- <span *ngIf="loading">Loading...</span>
+            <span *ngIf="!loading">Login</span> -->
+          Login
+        </button>
+      </div>
+      <div class="form-extra dis-flex">
+        <span class="clickable">Create an account</span>
+        <span class="clickable">Forgot Password?</span>
+      </div>
+    </form>
+  </div>
+</div>
+
+<!-- Vectors -->
+<div class="vectors">
+  <img
+    src="../../../assets/img/svg/auth_vector2.svg"
+    alt=""
+    class="vectors_left"
+  />
+  <img
+    src="../../../assets/img/svg/auth_vector1.svg"
+    alt=""
+    class="vectors_right"
+  />
+</div>
