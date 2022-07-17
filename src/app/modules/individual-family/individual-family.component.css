@@ -1,1 +1,58 @@
 @import "../../../assets/css/pricing.css";
+
+.pricing-header {
+  /* margin-bottom: 3rem; */
+}
+.hello .btn.active {
+  color: var(--white-color);
+  background-color: #1e1147;
+}
+.hello-tabs {
+  width: 60%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 3rem;
+}
+.hello-tabs .btn:not(:last-child) {
+  margin-right: 0.5rem;
+}
+.hello-body-head {
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+.hello-body-list {
+  flex-basis: 40%;
+}
+.hello-body-list li {
+  background: rgba(12, 101, 37, 0.1);
+  border-radius: 15px;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.hello-body-list li:not(:last-child) {
+  margin-bottom: 1rem;
+}
+.hello-body-content {
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05);
+  border-radius: 15px;
+  padding: 2rem;
+  flex-basis: 50%;
+}
+.hello-body-content .paragh {
+  margin: 0.5rem 0;
+}
+.hello-body-content ul li {
+  display: flex;
+  align-items: center;
+}
+.hello-body-content ul li:not(:last-child) {
+  margin-bottom: 0.5rem;
+}
+.hello-body-content ul li img {
+  margin-right: 0.5rem;
+}

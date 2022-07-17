@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { RouterModule } from '@angular/router';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AuthModule } from './layouts/auth/auth.module';
 import { DefaultModule } from './layouts/default/default.module';
 import { PageNotFoundComponent } from './modules/page-not-found/page-not-found.component';
-import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [

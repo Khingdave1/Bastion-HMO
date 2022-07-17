@@ -1,8 +1,6 @@
 /* App download starts */
 .app-download {
   background-color: var(--primary-color);
-}
-.app-download {
   padding: 0 5%;
 }
 .app-download .ba-flex-content {

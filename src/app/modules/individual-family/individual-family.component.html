@@ -118,7 +118,7 @@
     <div class="pricing-header">
       <div class="">
         <h3 class="">Individual & Family Pricing</h3>
-        <p class="">Plan key features</p>
+        <p class="">Pick any comfortable payment plan that works for you.</p>
       </div>
       <div class="pricing-tabs dis-flex">
         <button
@@ -153,110 +153,23 @@
     </div>
     <!-- Monthly -->
     <div class="pricing-body" *ngIf="id == 'monthly'">
-      <div class="pricing-item">
+      <div class="pricing-item" *ngFor="let i of plans">
         <div class="pricing-details">
-          <h5>Benefit</h5>
-          <h4 class="price">NGN 150,000</h4>
+          <h5>{{ i.name }}</h5>
+          <h4 class="price">NGN {{ i.price | number }}</h4>
           <p class="">
             This involves treatment of basic medical and surgical (minor)
             outpatient cases.
           </p>
-          <ul>
+          <ul *ngFor="let child of i.benefits">
             <li>
               <img src="../../../assets/img/svg/Check.svg" alt="" />
-              <p>Consultation Coverage</p>
-            </li>
-            <li>
-              <img src="../../../assets/img/svg/Check.svg" alt="" />
-              <p>Screening and Diagnostics</p>
-            </li>
-            <li>
-              <img src="../../../assets/img/svg/Check.svg" alt="" />
-              <p>Maternal & Infant Care</p>
-            </li>
-            <li>
-              <img src="../../../assets/img/svg/Check.svg" alt="" />
-              <p>Dental, Eye, ENT, etc</p>
+              <p>{{ child.name }}</p>
             </li>
           </ul>
         </div>
         <button class="btn tert-btn clickable">Choose Plan</button>
       </div>
-      <div class="pricing-item">
-        <div class="pricing-details">
-          <h5>Benefit</h5>
-          <h4 class="price">NGN 250,000</h4>
-          <p class="">
-            This involves treatment of basic medical and surgical (minor)
-            outpatient cases.
-          </p>
-          <ul>
-            <li>
-              <img src="../../../assets/img/svg/Check.svg" alt="" />
-              <p>Consultation Coverage</p>
-            </li>
-            <li>
-              <img src="../../../assets/img/svg/Check.svg" alt="" />
-              <p>Screening and Diagnostics</p>
-            </li>
-            <li>
-              <img src="../../../assets/img/svg/Check.svg" alt="" />
-              <p>Maternal & Infant Care</p>
-            </li>
-            <li>
-              <img src="../../../assets/img/svg/Check.svg" alt="" />
-              <p>Dental, Eye, ENT, etc</p>
-            </li>
-            <li>
-              <img src="../../../assets/img/svg/Check.svg" alt="" />
-              <p>Premium</p>
-            </li>
-          </ul>
-        </div>
-        <button class="btn tert-btn clickable">Choose Plan</button>
-      </div>
-      <div class="pricing-item">
-        <div class="pricing-details">
-          <h5>Benefit</h5>
-          <h4 class="price">NGN 350,000</h4>
-          <p class="">
-            This involves treatment of basic medical and surgical (minor)
-            outpatient cases.
-          </p>
-          <ul>
-            <li>
-              <img src="../../../assets/img/svg/Check.svg" alt="" />
-              <p>Consultation Coverage</p>
-            </li>
-            <li>
-              <img src="../../../assets/img/svg/Check.svg" alt="" />
-              <p>Screening and Diagnostics</p>
-            </li>
-            <li>
-              <img src="../../../assets/img/svg/Check.svg" alt="" />
-              <p>Maternal & Infant Care</p>
-            </li>
-            <li>
-              <img src="../../../assets/img/svg/Check.svg" alt="" />
-              <p>Dental, Eye, ENT, etc</p>
-            </li>
-            <li>
-              <img src="../../../assets/img/svg/Check.svg" alt="" />
-              <p>Chronic Treatments</p>
-            </li>
-            <li>
-              <img src="../../../assets/img/svg/Check.svg" alt="" />
-              <p>Preventive care</p>
-            </li>
-            <li>
-              <img src="../../../assets/img/svg/Check.svg" alt="" />
-              <p>Premium</p>
-            </li>
-          </ul>
-        </div>
-        <button class="btn tert-btn clickable">Choose Plan</button>
-      </div>
-      <div class="ba-card"></div>
     </div>
     <!-- Quarterly -->
     <div class="pricing-body" *ngIf="id == 'quarterly'">
@@ -363,7 +276,6 @@
         </div>
         <button class="btn tert-btn clickable">Choose Plan</button>
       </div>
-      <div class="ba-card"></div>
     </div>
     <!-- Half yearly -->
     <div class="pricing-body" *ngIf="id == 'half-yearly'">
@@ -581,3 +493,147 @@
     </div>
   </div>
 </section>
+
+<!--
+<div class="hello container">
+  <div class="hello-tabs">
+    <button
+      class="btn"
+      [class.active]="packageId == 'berly'"
+      (click)="packageChange('berly')"
+    >
+      Berly
+    </button>
+    <button
+      class="btn"
+      [class.active]="packageId == 'ruby'"
+      (click)="packageChange('ruby')"
+    >
+      Ruby
+    </button>
+    <button class="btn">Sapphirre</button>
+    <button class="btn">Emerald</button>
+    <button class="btn">Diamond</button>
+    <button class="btn">Jade</button>
+  </div>
+  <div class="hello-body" *ngIf="packageId == 'berly'">
+    <div class="hello-body-head dis-flex">
+      <div class="">
+        <h3 class="">NGN 150,000/Monthly</h3>
+        <p class="">
+          This involves treatment of basic medical and surgical (minor)
+          outpatient cases.
+        </p>
+      </div>
+      <div class="hello-body-head-btn">
+        <button class="btn prim-btn" routerLink="/cart-summary">
+          Buy now
+        </button>
+      </div>
+    </div>
+    <div class="hello-body-body ba-flex-content">
+      <ul class="hello-body-list">
+        <li>
+          <p>Consultation Coverage</p>
+          <img src="../../../assets/img/svg/expand_more.svg" alt="" />
+        </li>
+        <li>
+          <p>Consultation Coverage</p>
+          <img src="../../../assets/img/svg/expand_more.svg" alt="" />
+        </li>
+        <li>
+          <p>Consultation Coverage</p>
+          <img src="../../../assets/img/svg/expand_more.svg" alt="" />
+        </li>
+      </ul>
+      <aside class="hello-body-content">
+        <h5 class="">Consultation Coverage</h5>
+        <p class="paragh">
+          Make sure you use auto layouts to get that cool expanding effect!
+        </p>
+        <ul>
+          <li>
+            <img src="../../../assets/img/svg/Check.svg" alt="" />
+            <p>Fertility Services</p>
+          </li>
+          <li>
+            <img src="../../../assets/img/svg/Check.svg" alt="" />
+            <p>HIV/AIDS Treatment</p>
+          </li>
+          <li>
+            <img src="../../../assets/img/svg/Check.svg" alt="" />
+            <p>Cancer Care</p>
+          </li>
+          <li>
+            <img src="../../../assets/img/svg/Check.svg" alt="" />
+            <p>Renal Care</p>
+          </li>
+          <li>
+            <img src="../../../assets/img/svg/Check.svg" alt="" />
+            <p>Chronic Disease Management</p>
+          </li>
+        </ul>
+      </aside>
+    </div>
+  </div>
+  <div class="hello-body" *ngIf="packageId == 'ruby'">
+    <div class="hello-body-head dis-flex">
+      <div class="">
+        <h3 class="">NGN 250,000/Monthly</h3>
+        <p class="">
+          This involves treatment of basic medical and surgical (minor)
+          outpatient cases.
+        </p>
+      </div>
+      <div class="hello-body-head-btn">
+        <button class="btn prim-btn" routerLink="/cart-summary">
+          Buy now
+        </button>
+      </div>
+    </div>
+    <div class="hello-body-body ba-flex-content">
+      <ul class="hello-body-list">
+        <li>
+          <p>Consultation Coverage</p>
+          <img src="../../../assets/img/svg/expand_more.svg" alt="" />
+        </li>
+        <li>
+          <p>Consultation Coverage</p>
+          <img src="../../../assets/img/svg/expand_more.svg" alt="" />
+        </li>
+        <li>
+          <p>Consultation Coverage</p>
+          <img src="../../../assets/img/svg/expand_more.svg" alt="" />
+        </li>
+      </ul>
+      <aside class="hello-body-content">
+        <h5 class="">Consultation Coverage</h5>
+        <p class="paragh">
+          Make sure you use auto layouts to get that cool expanding effect!
+        </p>
+        <ul>
+          <li>
+            <img src="../../../assets/img/svg/Check.svg" alt="" />
+            <p>Fertility Services</p>
+          </li>
+          <li>
+            <img src="../../../assets/img/svg/Check.svg" alt="" />
+            <p>HIV/AIDS Treatment</p>
+          </li>
+          <li>
+            <img src="../../../assets/img/svg/Check.svg" alt="" />
+            <p>Cancer Care</p>
+          </li>
+          <li>
+            <img src="../../../assets/img/svg/Check.svg" alt="" />
+            <p>Renal Care</p>
+          </li>
+          <li>
+            <img src="../../../assets/img/svg/Check.svg" alt="" />
+            <p>Chronic Disease Management</p>
+          </li>
+        </ul>
+      </aside>
+    </div>
+  </div>
+</div> -->

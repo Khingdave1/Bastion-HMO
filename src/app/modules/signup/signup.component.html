@@ -25,7 +25,6 @@
           (click)="hide = !hide"
         />
       </div>
-      <img src="" alt="" />
       <div class="form-btn">
         <button class="btn prim-btn clickable">
           <!-- <span *ngIf="loading">Loading...</span>
@@ -34,7 +33,9 @@
         </button>
       </div>
       <div class="form-extra dis-flex">
-        <span class="clickable">Have and account? Login!</span>
+        <span class="clickable" routerLink="/signin"
+          >Have and account? Login!</span
+        >
         <!-- <span class="clickable">Forgot Password?</span> -->
       </div>
     </form>

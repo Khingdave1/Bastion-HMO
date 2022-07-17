@@ -9,6 +9,7 @@ import { ContactComponent } from './modules/contact/contact.component';
 import { CorporateComponent } from './modules/corporate/corporate.component';
 import { HomeComponent } from './modules/home/home.component';
 import { IndividualFamilyComponent } from './modules/individual-family/individual-family.component';
+import { PaymentComponent } from './modules/payment/payment.component';
 import { ProviderComponent } from './modules/provider/provider.component';
 import { SigninComponent } from './modules/signin/signin.component';
 import { SignupComponent } from './modules/signup/signup.component';
@@ -110,6 +111,14 @@ const routes: Routes = [
         component: SignupComponent,
         data: {
           title: 'Sign up',
+          description: 'Description Meta Tag Content'
+        }
+      },
+      {
+        path: 'payment',
+        component: PaymentComponent,
+        data: {
+          title: 'Payment',
           description: 'Description Meta Tag Content'
         }
       }

@@ -4,6 +4,8 @@ import { RouterModule } from '@angular/router';
 import { AuthComponent } from './auth.component';
 import { SigninComponent } from 'src/app/modules/signin/signin.component';
 import { SignupComponent } from 'src/app/modules/signup/signup.component';
+import { PaymentComponent } from 'src/app/modules/payment/payment.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -11,11 +13,14 @@ import { SignupComponent } from 'src/app/modules/signup/signup.component';
   declarations: [
     AuthComponent,
     SigninComponent,
-    SignupComponent
+    SignupComponent,
+    PaymentComponent
   ],
   imports: [
     CommonModule,
-    RouterModule
+    RouterModule,
+    FormsModule,
+    ReactiveFormsModule
   ]
 })
 export class AuthModule { }
